@@ -8,7 +8,7 @@ I am curently working with Prof. Virendra Sule of EE department on developing a 
 
 ## Architecture
 The current implementation of the system consists of 3 seperate servers and a client side code. The servers are
-+ Frontend/Database
++ Frontend with Database 
 * Msg Queue
 * Backend
 
