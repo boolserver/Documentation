@@ -28,7 +28,7 @@ if __name__ == "__main__":
     else:
         mode = sys.argv[1]
 
-    dirs = ["../backend_server/", "../clientside_server/", "../Documentation/", "../frontend_server/", "../message_queue/"]
+    dirs = ["../backend_server/", "../clientside_server/", "../frontend_server/", "../message_queue/"]
     
     git_repo = [ \
         "https://github.com/boolserver/frontend_server.git", \
