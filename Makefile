@@ -6,7 +6,7 @@ all: require create_dirs
 	echo "Run with command -> status, pull, push, run_make or clone" 
 
 create_dirs:
-	cd $(HOMEDIR) && mkdir -f backend_server/tmp_data frontend_server/data
+	cd $(HOMEDIR) && mkdir -f backend_server/tmp_data frontend_server/data && cd -
 
 require:
 	sudo apt-get install uuid-dev
