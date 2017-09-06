@@ -1,7 +1,12 @@
 # Make file for running python script for clone, status, pull, push, make requests
 
-all:
+HOMEDIR=../
+
+all: require create_dirs
 	echo "Run with command -> status, pull, push, run_make or clone" 
+
+create_dirs:
+	cd $(HOMEDIR) && mkdir -f backend_server/tmp_data frontend_server/data
 
 require:
 	sudo apt-get install uuid-dev
