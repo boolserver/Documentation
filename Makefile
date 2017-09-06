@@ -9,7 +9,7 @@ pull:
 push:
 	python status_push_pull.py push
 
-make:
+run_make:
 	python status_push_pull.py make
 
 clone:
