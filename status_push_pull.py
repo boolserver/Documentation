@@ -20,7 +20,8 @@ def git_clone_except_documentation(git_repos):
 
 def run_make_file_for_all_dirs(dirs):
     for d in dirs:
-        os.system("cd %s && make && cd -" % d)
+        if d != "../Documentation/":
+            os.system("cd %s && make && cd -" % d)
 
 if __name__ == "__main__":
     if len(sys.argv) < 1:
@@ -28,7 +29,7 @@ if __name__ == "__main__":
     else:
         mode = sys.argv[1]
 
-    dirs = ["../backend_server/", "../clientside_server/", "../frontend_server/", "../message_queue/"]
+    dirs = ["../backend_server/", "../clientside_server/", "../Documentation/", "../frontend_server/", "../message_queue/"]
     
     git_repo = [ \
         "https://github.com/boolserver/frontend_server.git", \
