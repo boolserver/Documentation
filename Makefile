@@ -2,7 +2,7 @@
 
 HOMEDIR=../
 
-all: require create_dirs
+all: require clone create_dirs
 	echo "Run with command -> status, pull, push, run_make or clone" 
 
 create_dirs:
